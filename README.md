@@ -1,6 +1,6 @@
 # wake
 
-This script will prevent a macbook from going to sleep when the lid is closed. Also it ensures that sleep returns to normal when the script closes. It utilizes the hidden command `pmset disablesleep`. 
+This script will prevent a Macbook from going to sleep when the lid is closed. Also it ensures that sleep returns to normal when the script closes. It utilizes the hidden command `pmset disablesleep`. 
 
 There are two versions of this script: `wake.sh` if you modify pmset to not require password and `wake2.sh` if you don't mind typing sudo and your password every time. You can rename the scripts to whatever you want.
 
