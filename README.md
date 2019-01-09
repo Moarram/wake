@@ -38,4 +38,4 @@ Disable sleep: `sudo pmset disablesleep 1`
 
 Enable sleep: `sudo pmset disablesleep 0`
 
-One side effect, at least on my machine, is that the keyboard doesn't turn back on when sleep is disabled. Adjusting the brightness turns it back on though.
+One side effect, at least on my machine, is that the keyboard backlight doesn't turn back on when sleep is disabled. Adjusting the brightness turns it back on though.
