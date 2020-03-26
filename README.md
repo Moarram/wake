@@ -28,7 +28,7 @@ It can now be run from Terminal in the same directory with `sudo ./wake.sh`.
 
 ### 2. Make script global (optional)
 
-If you want to run the script from anywhere add it to `/usr/local/bin`. Or, save it wherever you want and make a link to it with `ln -s /path/to/wake.sh /usr/local/bin/wake.sh`.
+If you want to run the script from anywhere add it to `/usr/local/bin`. Or, save it wherever you want and make a link to it with `ln -s /path/to/wake.sh /usr/local/bin/wake`.
 
 It can now be run from Terminal with `sudo wake`.
 
@@ -38,8 +38,7 @@ The power management command `pmset` requires sudo to run. If you don't want to 
 
 1. Open Terminal
 2. Open the sudo configuration editor with `sudo visudo`.
-3. Add to the end of the file `[user] ALL=(ALL) NOPASSWD: /usr/bin/pmset` where `[user]` is your username.
+3. Add to the end of the file `<user> ALL=(ALL) NOPASSWD: /usr/bin/pmset` where `<user>` is your username.
 4. Save changes with `:wq`.
-5. Log out and back in again for the changes to take effect.
 
 It can now be run from Terminal with `wake`, or by clicking on the script in Finder.
