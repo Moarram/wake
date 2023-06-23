@@ -8,7 +8,7 @@ function finish {
 }
 $SUDO pmset disablesleep 1 || exit
 trap finish EXIT
-printf "Sleep disabled... quit script to re-enable (Ctrl+C)\n"
+printf "Sleep disabled... quit script to re-enable (Command + .)\n"
 while :
 	do sleep 1000
 done
