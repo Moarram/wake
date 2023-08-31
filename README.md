@@ -35,7 +35,7 @@ sudo ./wake.sh
 
 ### *Make script global (optional)*
 
-If you want to run the script from anywhere add it to `/usr/local/bin`. To do this make a link with `ln -s /your/path/to/wake.sh /usr/local/bin/wake`.
+If you want to run the script from anywhere add it to `/usr/local/bin`. To do this make a link with `sudo ln -s /your/absolute/path/to/wake.sh /usr/local/bin/wake`.
 
 It can now be run anywhere
 ```bash
