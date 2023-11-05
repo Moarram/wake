@@ -1,10 +1,12 @@
 # wake
-Macbooks sleep when the lid is closed (unless plugged in to an external monitor). To keep the Macbook awake we can use `pmset disablesleep`. I made a convenience script `wake.sh` that disables sleep and automatically re-enables it when quit.
+Macbooks sleep when the lid is closed (unless plugged in to an external monitor). To keep the Macbook awake we can use `pmset disablesleep`.
+
+I made a convenience script `wake.sh` that disables sleep and automatically re-enables it when quit.
 
 <br>
 
 ## `pmset disablesleep`
-I stumbled across this command on a forum somewhere. The `pmset` man pages have no mention of `disablesleep` but it does in fact disable sleep, even with a closed lid.
+The `pmset` man pages have no mention of `disablesleep` but it does in fact disable sleep, even with a closed lid.
 
 **WARNING:** The Macbook has reduced cooling ability while the lid is closed and could overheat in a confined space (such as a backpack).
 
@@ -54,13 +56,13 @@ sudo wake
 
 ### *Remove password requirement (optional)*
 
-The power management command `pmset` requires sudo to run. If you don't want to enter your password each time you can set it to not require password for your user.
+The power management command `pmset` requires sudo to run. If you don't want to enter your password each time you can remove the password requirement for your user.
 
-**WARNING:** Do this at your own risk... removing the password requirement obviously reduces security.
+**WARNING:** Do this at your own risk as it obviously reduces security.
 
-1. Open the sudo configuration editor in your terminal with `sudo visudo`.
-1. Add to the end of the file `<user> ALL=(ALL) NOPASSWD: /usr/bin/pmset` where `<user>` is your username.
-1. Save changes with `:wq`.
+1. Open the sudo configuration editor in your terminal with `sudo visudo`
+1. Add to the end of the file `<user> ALL=(ALL) NOPASSWD: /usr/bin/pmset` where `<user>` is your username
+1. Save changes with `:wq`
 
 Run it without password
 ```
